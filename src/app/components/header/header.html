@@ -1,0 +1,23 @@
+<header class="header">
+  <div class="header__left">
+    <a href="https://www.linkedin.com/in/ethanmcf/" target="_blank" aria-label="LinkedIn" class="header__icon">
+      <img src="assets/svgs/linkedin-square.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/ethanmcf" target="_blank" aria-label="GitHub" class="header__icon">
+      <img src="assets/svgs/github.svg" alt="GitHub" />
+    </a>
+    <a href="https://www.instagram.com/ethanmcfarland2/" target="_blank" aria-label="Instagram" class="header__icon">
+      <img src="assets/svgs/instagram.svg" alt="Instagram" />
+    </a>
+  </div>
+  <button class="hamburger" type="button" (click)="isMenuOpen.set(!isMenuOpen())" aria-label="Toggle navigation">
+    <img src="assets/svgs/bars.svg" alt="Menu" width="32" height="32" />
+  </button>
+  <nav class="header__center" [class.open]="isMenuOpen()">
+    <a href="#about" class="nav-link nav-link--angle">About</a>
+    <a href="#projects" class="nav-link nav-link--angle">Projects</a>
+    <a href="#experience" class="nav-link nav-link--angle">Experience</a>
+    <a href="#skills" class="nav-link nav-link--angle">Skills</a>
+  </nav>
+</header>
+
