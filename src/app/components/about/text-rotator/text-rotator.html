@@ -1,0 +1,7 @@
+<div class="text-rotator">
+  <span *ngFor="let text of texts; let i = index"
+        [class.active]="currentIndex === i"
+        [class.inactive]="currentIndex !== i">
+    {{ text }}
+  </span>
+</div>
