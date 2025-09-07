@@ -1,5 +1,5 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
@@ -157,7 +157,7 @@
     left: 2rem;
   }
   .hamburger {
-    right: 4.2rem;
+    right: 5.2rem;
   }
   .header__center a {
     background: none;
