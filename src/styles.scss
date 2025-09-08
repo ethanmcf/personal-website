@@ -12,9 +12,19 @@ html, body {
   scroll-behavior: smooth; /* smooth scroll */
 }
 .page-section {
-  height: 100vh;          /* full viewport height */
+  min-height: 400px;
+  width: 100vw;
   display: flex;
+  align-items: center;
+  justify-content: center;
   scroll-snap-align: start;
+  /* Remove fixed height so footer is visible */
+}
+
+#app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
