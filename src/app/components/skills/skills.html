@@ -1,4 +1,15 @@
 <section class="skills">
-  <h2>Skills</h2>
-  <p>Skills section content goes here.</p>
+  <app-title
+    title="Skills"
+    subtitle="A showcase of my technical proficiencies and tools I excel in.">
+  </app-title>
+    <div class="skills-sections">
+        <app-skill-section
+        *ngFor="let section of skillSections"
+        [title]="section.title"
+        [description]="section.description"
+        [skills]="section.skills"
+        [icon]="section.icon">
+        </app-skill-section>
+    </div>
 </section>

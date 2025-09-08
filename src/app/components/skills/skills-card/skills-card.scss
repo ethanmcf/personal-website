@@ -1,0 +1,72 @@
+.card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0.75rem;
+  transition: box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  display: flex;;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.card-info {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.card-experience {
+  font-size: 0.875rem; /* text-sm */
+  color: grey;
+}
+
+.progress-container {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 2rem;
+}
+
+.progress-ring {
+  width: 3rem;
+  height: 3rem;
+  transform: rotate(-90deg);
+}
+
+.progress-bg {
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+  opacity: 0.2;
+}
+
+.progress-bar {
+  fill: none;
+  stroke: var(--custom-blue);
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s ease-out;
+}
+
+.progress-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-label span {
+  font-size: 0.75rem;
+  font-weight: 600;
+}

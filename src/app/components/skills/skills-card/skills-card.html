@@ -1,0 +1,32 @@
+<div class="card">
+  <div class="card-content">
+    <!-- Left side -->
+    <div class="card-info">
+      <h3 class="card-title">{{ name }}</h3>
+      <p class="card-experience">{{ experience }}</p>
+    </div>
+
+    <!-- Right side (circular progress) -->
+    <div class="progress-container">
+      <svg class="progress-ring" viewBox="0 0 44 44" fill="blue">
+        <circle
+          cx="22"
+          cy="22"
+          r="20"
+          class="progress-bg"
+        ></circle>
+        <circle
+          cx="22"
+          cy="22"
+          r="20"
+          class="progress-bar"
+          [attr.stroke-dasharray]="strokeDasharray"
+          [attr.stroke-dashoffset]="strokeDashoffset"
+        ></circle>
+      </svg>
+      <div class="progress-label">
+        <span>{{ proficiency }}%</span>
+      </div>
+    </div>
+  </div>
+</div>
