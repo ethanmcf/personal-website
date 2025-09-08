@@ -23,8 +23,7 @@ export class ProjectComponent {
     {
       title: 'Connect–4 AI',
       year: '2023',
-      skills: ['Python', 'PyGame', 'Github'],
-      description: 'Web application that tracks the wait time of clinics in real-time. Users are shown the quickest total trip, factoring in driving time and wait time.',
+      skills: ['Python', 'PyGame', 'Github', 'Docker'],      description: 'Web application that tracks the wait time of clinics in real-time. Users are shown the quickest total trip, factoring in driving time and wait time.',
       image: '', // you can drop in an asset path here
       link: '#'
     },
@@ -43,6 +42,6 @@ export class ProjectComponent {
       description: 'Web application that tracks the wait time of clinics in real-time. Users are shown the quickest total trip, factoring in driving time and wait time.',
       image: '',
       link: '#'
-    }
+    },
   ];
 }
