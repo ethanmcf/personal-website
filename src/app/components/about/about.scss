@@ -116,6 +116,11 @@
   margin: 0.2rem 0 0;
   color: #666;
 }
+@media (max-width: 900px) {
+    .about-image img{
+        display: none;
+    }
+}
 
 .about-image {
   position: absolute;

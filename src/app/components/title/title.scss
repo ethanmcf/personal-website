@@ -1,0 +1,33 @@
+.title-container {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  .title-flex {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--custom-blue); // match your screenshot color
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+
+  .underline {
+    height: 4px;
+    background: var(--custom-blue);
+    border-radius: 2px;
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: -3rem;
+  }
+}

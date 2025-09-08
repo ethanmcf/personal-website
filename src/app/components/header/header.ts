@@ -37,7 +37,7 @@ export class Header implements AfterViewInit {
       }
       // else: don't reset to '' → keep the last active section
     },
-    { root: null, rootMargin: '0px', threshold: [0.6, 0.75, 1] }
+    { root: null, rootMargin: '0px', threshold: Array.from({ length: 41 }, (_, i) => (i + 60) / 100) }
   );
 
     sections.forEach(section => observer.observe(section));
