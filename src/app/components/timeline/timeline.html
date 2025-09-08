@@ -1,0 +1,19 @@
+<section class="timeline-container">
+  <div class="timeline">
+      <div class="timeline-line"></div>
+    <div *ngFor="let inf of data" class="timeline-item">
+      <div class="timeline-outer-dot">
+        <div class="timeline-inner-dot"></div>
+      </div> 
+      <div class="timeline-content">
+        <h3 class="title">
+          {{ inf.title }} <a href="{{ inf.url }}" target="_blank">@ {{ inf.company }}</a>
+        </h3>
+        <p class="meta">{{ inf.period }} | {{ inf.location }}</p>
+        <ul>
+          <li *ngFor="let detail of inf.details">{{ detail }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
