@@ -8,11 +8,12 @@ import { EducationComponent } from './components/education/education';
 import { Skills } from './components/skills/skills';
 import { FooterComponent } from './components/footer/footer';
 import { CommonModule } from '@angular/common';
+import { Contact } from './components/contact/contact';
 
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, EducationComponent, RouterOutlet, Header, About, ExperienceComponent, ProjectComponent, Skills, FooterComponent],
+  imports: [CommonModule, Contact, EducationComponent, RouterOutlet, Header, About, ExperienceComponent, ProjectComponent, Skills, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

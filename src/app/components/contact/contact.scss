@@ -1,0 +1,155 @@
+.icon {
+  width: 27px;
+  height: 27px;
+  color: var(--custom-blue);
+  fill: currentColor;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* app.component.css */
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-header h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.contact-header p {
+  font-size: 1.1em;
+  color: #777;
+}
+
+.contact-form {
+  width: 100%;
+  padding: 40px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.icon-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2em;
+  color: #7a8a99;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--custom-blue);
+  background: transparent;
+  padding: 8px 0 6px 0;
+  font-size: 1.1em;
+  color: #222;
+  margin-bottom: 0;
+  transition: border-color 0.3s;
+  font-family: inherit;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-bottom: 2.5px solid #2196f3;
+}
+
+.input-group textarea {
+  resize: vertical;
+  min-height: 90px;
+  max-height: 200px;
+  font-size: 1.1em;
+  padding-top: 2px;
+}
+
+.input-underline {
+  display: none;
+}
+
+.button-group {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.send-button {
+  background-color: var(--custom-blue);
+  color: #fff;
+  border: none;
+  padding: 16px 38px;
+  border-radius: 16px;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  margin: 0 auto;
+}
+
+
+.send-icon svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.message-group i {
+  top: 25px;
+  transform: translateY(0);
+}
+
+.button-group {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.send-button {
+  background-color: #4da6ff;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.send-button:hover {
+  background-color: #3a98e8;
+  transform: translateY(-2px);
+}
+
+.send-button i {
+  margin-left: 8px;
+}

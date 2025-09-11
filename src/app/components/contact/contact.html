@@ -1,0 +1,55 @@
+<div class="contact-container">
+  <app-title
+    title="Let's Chat!"
+    subtitle="Feel free to drop me a message!">
+  </app-title>
+  <form class="contact-form">
+    <div class="form-row">
+      <div class="input-group">
+        <label for="name">
+          <span class="icon-label">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"  aria-hidden="true">
+    <path d="M463 448.2C440.9 409.8 399.4 384 352 384L288 384C240.6 384 199.1 409.8 177 448.2C212.2 487.4 263.2 512 320 512C376.8 512 427.8 487.3 463 448.2zM64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576C178.6 576 64 461.4 64 320zM320 336C359.8 336 392 303.8 392 264C392 224.2 359.8 192 320 192C280.2 192 248 224.2 248 264C248 303.8 280.2 336 320 336z"/>
+            </svg>
+            <span>Name</span>
+          </span>
+        </label>
+        <input type="text" id="name" name="name" autocomplete="off">
+        <span class="input-underline"></span>
+      </div>
+      <div class="input-group">
+        <label for="email">
+          <span class="icon-label">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" aria-hidden="true">
+                <path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/>
+            </svg>
+            <span>Email</span>
+          </span>
+        </label>
+        <input type="email" id="email" name="email" autocomplete="off">
+        <span class="input-underline"></span>
+      </div>
+    </div>
+    <div class="input-group message-group">
+      <label for="message">
+        <span class="icon-label">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" aria-hidden="true">
+                <path d="M416.9 85.2L372 130.1L509.9 268L554.8 223.1C568.4 209.6 576 191.2 576 172C576 152.8 568.4 134.4 554.8 120.9L519.1 85.2C505.6 71.6 487.2 64 468 64C448.8 64 430.4 71.6 416.9 85.2zM338.1 164L122.9 379.1C112.2 389.8 104.4 403.2 100.3 417.8L64.9 545.6C62.6 553.9 64.9 562.9 71.1 569C77.3 575.1 86.2 577.5 94.5 575.2L222.3 539.7C236.9 535.6 250.2 527.9 261 517.1L476 301.9L338.1 164z"/>
+            </svg>
+          <span>Message</span>
+        </span>
+      </label>
+      <textarea id="message" name="message" autocomplete="off"></textarea>
+      <span class="input-underline"></span>
+    </div>
+    <div class="button-group">
+      <button type="submit" class="send-button">
+        Send
+        <span class="send-icon">
+          <svg width="22" height="22" fill="#fff" viewBox="0 0 24 24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        </span>
+      </button>
+    </div>
+  </form>
+</div>
