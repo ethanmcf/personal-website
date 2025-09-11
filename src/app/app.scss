@@ -6,15 +6,19 @@ html, body {
 }
 
 .page-section {
-  height: 100vh;  
+  min-height: 100vh;
+  height: auto;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  scroll-snap-align: start;
+  justify-content: flex-start;
+  /* Section grows with content, but never less than viewport */
 }
 
 body {
-  scroll-snap-type: y mandatory; /* optional, creates snap scrolling */
-  overflow-y: scroll;
+  overflow-y: auto;
+}
+.main-container {
+  overflow:hidden;
 }

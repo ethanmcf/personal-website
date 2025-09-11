@@ -147,7 +147,12 @@
   justify-self: center;
   margin-top: -7rem;
   font-size: 0.9rem;
-    position: absolute;
-  color: var(--custom-blue);
-}
+  position: relative;
 
+  a {
+    text-decoration: none;
+    color: var(--custom-blue);
+    
+  }
+
+}
