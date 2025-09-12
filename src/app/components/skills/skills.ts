@@ -10,28 +10,46 @@ interface Section {
     skills: Skill[];
     icon: string; // SVG markup or icon name
 }
-const programmingSkills: Skill[] = [
-    { name: "Java", experience: "1+ years of experience", proficiency: 86 },
-    { name: "JavaScript", experience: "2+ years of experience", proficiency: 92 },
-    { name: "Python", experience: "1+ years of experience", proficiency: 78 },
-    { name: "TypeScript", experience: "1+ years of experience", proficiency: 85 },
-    { name: "React", experience: "2+ years of experience", proficiency: 90 },
-    { name: "Node.js", experience: "1+ years of experience", proficiency: 82 },
+const frontEnd: Skill[] = [
+    { name: "React", experience: "4+ years of experience", proficiency: 92 },
+    { name: "NextJS", experience: "2+ years of experience", proficiency: 80 },
+    { name: "JavaScript", experience: "4+ years of experience", proficiency: 85 },
+    { name: "TypeScript", experience: "2+ years of experience", proficiency: 75 },
+    { name: "HTML/CSS", experience: "5+ years of experience", proficiency: 90 },
+    { name: "Node.js", experience: "1+ years of experience", proficiency: 70 },
 ];
 
-const databaseSkills: Skill[] = [
-    { name: "MySQL", experience: "2+ years of experience", proficiency: 88 },
-    { name: "PostgreSQL", experience: "1+ years of experience", proficiency: 75 },
-    { name: "MongoDB", experience: "1+ years of experience", proficiency: 80 },
-    { name: "Redis", experience: "6+ months of experience", proficiency: 65 },
+const backEnd: Skill[] = [
+    { name: "Python", experience: "5+ years of experience", proficiency: 93 },
+    { name: "Java", experience: "1.5+ years of experience", proficiency: 85 },
+    { name: "SQL", experience: "1+ years of experience", proficiency: 80 },
+    { name: "C", experience: "6+ months of experience", proficiency: 70 },
+    { name: "Haskel", experience: "3+ months of experience", proficiency: 50 },
+
 ];
 
-const toolsSkills: Skill[] = [
-    { name: "Git", experience: "2+ years of experience", proficiency: 95 },
-    { name: "Docker", experience: "1+ years of experience", proficiency: 72 },
-    { name: "VS Code", experience: "3+ years of experience", proficiency: 98 },
-    { name: "AWS", experience: "6+ months of experience", proficiency: 68 },
-    { name: "Figma", experience: "1+ years of experience", proficiency: 85 },
+const testtingAndDeployment: Skill[] = [
+    { name: "Kubernetes", experience: "7+ months of experience", proficiency: 90 },
+    { name: "GCP", experience: "6+ months of experience", proficiency: 80 },
+    { name: "Jenkins", experience: "3+ years of experience", proficiency: 92 },
+    { name: "CI/CD Pipelines", experience: "6+ monthss of experience", proficiency: 85 },
+    { name: "AWS:EC2", experience: "2+ months of experience", proficiency: 60 },
+    { name: "Jest", experience: "6+ months of experience", proficiency: 70 },
+    { name: "JUnit", experience: "5+ months of experience", proficiency: 70 },
+
+];
+
+const devTools: Skill[] = [
+    { name: "Git", experience: "6+ years of experience", proficiency: 95 },
+    { name: "Docker", experience: "1+ years of experience", proficiency: 80 },
+    { name: "Figma", experience: "3+ years of experience", proficiency: 93 },
+    { name: "TDD", experience: "3+ years of experience", proficiency: 80 },
+    { name: "Agile", experience: "3+ years of experience", proficiency: 95 },
+    { name: "OOP", experience: "3+ years of experience", proficiency: 85 },
+    { name: "Design Principles", experience: "1+ years of experience", proficiency: 85 },
+
+
+
 ];
 
 
@@ -45,22 +63,28 @@ const toolsSkills: Skill[] = [
 export class Skills {
     skillSections: Section[] = [
       {
-        title: "Programming Languages",
-        description: "Various programming languages I have experience with.",
-        skills: programmingSkills,
+        title: "Front-End Development",
+        description: "Creating responsive, interactive user interfaces.",
+        skills: frontEnd,
         icon: "💻"
       },
       {
-        title: "Databases",
-        description: "Experienced with relational and non-relational databases for efficient data management.",
-        skills: databaseSkills,
+        title: "Back-End Development",
+        description: "Building secure, scalable server systems.",
+        skills: backEnd,
         icon: "🗄️"
       },
       {
-        title: "Tools & Platforms",
-        description: "Familiar with essential development tools and cloud platforms to enhance productivity.",
-        skills: toolsSkills,
+        title: "Testing & Deployment",
+        description: "Ensuring quality and smooth releases.",
+        skills: testtingAndDeployment,
+        icon: "🚀"
+      },
+      {
+        title: "Development Tools and Methodologies",
+        description: "Tools and practices for efficient development.",
+        skills: devTools,
         icon: "🛠️"
-      }
+      },
     ];
 }
