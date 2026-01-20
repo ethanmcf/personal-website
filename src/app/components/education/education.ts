@@ -22,7 +22,7 @@ export class EducationComponent {
       details: [
         '3.96/4.0 GPA',
         '3x Dean\'s List (2022-2025)',
-        'Related Coursework: Algorithims and Data Structures, Operating Systems, Software Design, Databases, Machine Learning',
+        'Related Coursework: Algorithms and Data Structures, Operating Systems, Software Design, Databases, Machine Learning',
         'UofT is ranked 1st in Canada and 10th in the world for Computer Science',
       ]
     },

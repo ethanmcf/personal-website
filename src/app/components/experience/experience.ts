@@ -14,7 +14,7 @@ import { TimelineData } from '../../models/timeline.model';
 export class ExperienceComponent {
   experiences: TimelineData[] = [
     {
-      title: 'DevOps Specalist Intern',
+      title: 'DevOps Specialist Intern',
       company: 'Tangerine',
       url: 'https://www.tangerine.ca',
       period: 'Summer 2025',
@@ -26,7 +26,7 @@ export class ExperienceComponent {
     },
     {
       title: 'Software Developer Intern',
-      company: 'Socitabank',
+      company: 'Scotiabank',
       url: 'https://www.scotiabank.com/ca/en/personal.html',
       period: 'Summer 2024',
       location: 'Toronto, CA',
@@ -43,7 +43,7 @@ export class ExperienceComponent {
       location: 'Toronto, CA',
       details: [
         "Restructured Tangerine's Selenium WebDriver implementation, enhancing the speed of mobile web testing execution by over 25%, with a focus on supporting offshore teams and remote employees",
-        'Developed Java and TypeScript scripts to help developers expand front-end and api test coverage by 10%'
+        'Developed Java and TypeScript scripts to help developers expand front-end and API test coverage by 10%'
       ]
     },
     {
